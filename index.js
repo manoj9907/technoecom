@@ -36,7 +36,10 @@ app.listen(4000, () => {
 });
 
 mongoose.Promise = global.Promise;
-mongoose.connect(dbConfig.url, { useNewUrlParser: true });
+mongoose.connect(dbConfig.url, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 mongoose.connection.on("error", function (error) {
   console.error("Database connection error:", error);
