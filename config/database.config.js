@@ -1,3 +1,3 @@
 module.exports = {
-  url: "mongodb://localhost:27017/ecom",
+  url: "mongodb+srv://manoj:Manoj%407170@manoj.sqzp9.mongodb.net/ecom",
 };
